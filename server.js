@@ -1,7 +1,7 @@
 // Dependencies
 var express = require("express");
 var bodyParser = require("body-parser");
-var path = require("path");
+
 
 // set up Express app
 var app = express();
@@ -15,7 +15,8 @@ app.use(bodyParser.json());
 
 // api route - remember to require
 
-// html routes - remember to require
+// html routes
+require("./app/routing/htmlRoutes")(app);
 
 // starts the server to begin listening
 app.listen(PORT, function() {

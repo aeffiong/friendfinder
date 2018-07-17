@@ -16,4 +16,6 @@ var friendDataArray = [
             1
         ]
     }
-] 
+];
+
+module.exports = friendDataArray;
