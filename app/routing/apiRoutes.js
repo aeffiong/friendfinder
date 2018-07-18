@@ -1,5 +1,5 @@
 // Grab the friend data array
-var friendData = require("./app/data/friends");
+var friendData = require("../data/friends");
 
 // routing
 module.exports = function(app) {

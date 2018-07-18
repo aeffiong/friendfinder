@@ -13,7 +13,8 @@ app.use(bodyParser.json());
 
 // Routes
 
-// api route - remember to require
+// api route
+require("./app/routing/apiRoutes")(app);
 
 // html routes
 require("./app/routing/htmlRoutes")(app);

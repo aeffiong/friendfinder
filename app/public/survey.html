@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Friend Finder: Survey</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="main.css" /> -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<body>
+    <div class = "container">
+            <h2>Survey Questions</h2>
+            <br>
+        
+            <h3><strong>About You</strong></h3>
+            <h4>Name (Required)</h4>
+            <input type="text" id="name" class="form-control" required>
+        
+            <h4>Link to Photo Image (Required)</h4>
+            <input type="text" id="photo" class="form-control" required>
+            <br>
+        
+            <h3><strong>Question 1</strong></h3>
+            <h4>You find exercise fun.</h4>
+            <select class="chosen-select" id="q1">
+              <option value=""></option>
+              <option value="1">1 (Strongly Disagree)</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5 (Strongly Agree)</option>
+            </select>
+        
+            <h3><strong>Question 2</strong></h3>
+            <h4>You like outdoor activities: biking, hiking, swimming, walking, jogging.</h4>
+            <select class="chosen-select" id="q2">
+              <option value=""></option>
+              <option value="1">1 (Strongly Disagree)</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5 (Strongly Agree)</option>
+            </select>
+        
+        
+            <h3><strong>Question 3</strong></h3>
+            <h4>You like going to the gym for exercise.</h4>
+            <select class="chosen-select" id="q3">
+              <option value=""></option>
+              <option value="1">1 (Strongly Disagree)</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5 (Strongly Agree)</option>
+            </select>
+        
+        
+            <h3><strong>Question 4</strong></h3>
+            <h4>You like working out at home by yourself.</h4>
+            <select class="chosen-select" id="q4">
+              <option value=""></option>
+              <option value="1">1 (Strongly Disagree)</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5 (Strongly Agree)</option>
+            </select>
+        
+        
+            <h3><strong>Question 5</strong></h3>
+            <h4>You like exercising in a group or group setting.</h4>
+            <select class="chosen-select" id="q5">
+              <option value=""></option>
+              <option value="1">1 (Strongly Disagree)</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5 (Strongly Agree)</option>
+            </select>
+        
+        
+            <h3><strong>Question 6</strong></h3>
+            <h4>When you overhear someone talking about their fitness routine, you want to join in.</h4>
+            <select class="chosen-select" id="q6">
+              <option value=""></option>
+              <option value="1">1 (Strongly Disagree)</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5 (Strongly Agree)</option>
+            </select>
+        
+        
+            <h3><strong>Question 7</strong></h3>
+            <h4>Your health and fitness is important to you.</h4>
+            <select class="chosen-select" id="q7">
+              <option value=""></option>
+              <option value="1">1 (Strongly Disagree)</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5 (Strongly Agree)</option>
+            </select>
+        
+            <h3><strong>Question 8</strong></h3>
+            <h4>You find grocery shopping enjoyable.</h4>
+            <select class="chosen-select" id="q8">
+              <option value=""></option>
+              <option value="1">1 (Strongly Disagree)</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5 (Strongly Agree)</option>
+            </select>
+        
+            <h3><strong>Question 9</strong></h3>
+            <h4>You think that meal planning is an important part of your fitness.</h4>
+            <select class="chosen-select" id="q9">
+              <option value=""></option>
+              <option value="1">1 (Strongly Disagree)</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5 (Strongly Agree)</option>
+            </select>
+        
+            <h3><strong>Question 10</strong></h3>
+            <h4>You find room to have fun and eat treats in your fitness routine.</h4>
+            <select class="chosen-select" id="q10">
+              <option value=""></option>
+              <option value="1">1 (Strongly Disagree)</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5 (Strongly Agree)</option>
+            </select>
+        
+            <br>
+            <br>
+        
+            <!-- Submit Button -->
+            <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit"><i class="fa fa-check-circle" aria-hidden="true"></i>
+             Submit</button>
+        
+            
+            <footer class="footer">
+              <div class="container">
+                <p><a href="/api/friends">API Friends List</a> | <a href="https://github.com/aeffiong/friendfinder">GitHub Repo</a></p>
+              </div>
+            </footer>
+    </div>
+    <script type = "text/javascript">
+        $("#submit").on("click", function(event) {
+            event.preventDefault();
+
+            // grab form elements
+            var newFriend = {
+                name: $("#name").val().trim(),
+                photo: $("#photo").val().trim(),
+                scores: [
+                    $("#q1").val(),
+                    $("#q2").val(),
+                    $("#q3").val(),
+                    $("#q4").val(),
+                    $("#q5").val(),
+                    $("#q6").val(),
+                    $("#q7").val(),
+                    $("#q8").val(),
+                    $("#q9").val(),
+                    $("#q10").val()
+                ]
+            };
+            console.log(newFriend);
+
+            $.post("/api/friends", newFriend, function(data) {
+                // my modal displaying match goes here
+                
+
+                // Clear the form when submitting - not working
+                $("#name").val("");
+                $("#photo").val("");
+                $("#q1").val("");
+                $("#q2").val("");
+                $("#q3").val("");
+                $("#q4").val("");
+                $("#q5").val("");
+                $("#q6").val("");
+                $("#q7").val("");
+                $("#q8").val("");
+                $("#q9").val("");
+                $("#q10").val("");
+            })
+        })
+        
+        
+        </script>
+</body>
+</html>
