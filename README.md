@@ -6,7 +6,7 @@ Friend Finder collects data from the user, saves it to the server and then retur
 
 ### Get Started
 
-To get started with Friend Finder for Fitness, use the link provided here: [a link] (https://stark-atoll-68459.herokuapp.com/).
+To get started with Friend Finder for Fitness, use the link provided here: [a link](https://stark-atoll-68459.herokuapp.com/).
 
 Click get started which will take you to the survey of 10 questions. Complete the survey and find your match!
 
