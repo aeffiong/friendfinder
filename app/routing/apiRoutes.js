@@ -2,13 +2,13 @@
 var friendData = require("../data/friends");
 
 // routing
-module.exports = function(app) {
+module.exports = function (app) {
     // GET request
-    app.get("/api/friends", function(req, res) {
+    app.get("/api/friends", function (req, res) {
         res.json(friendData);
-      });
+    });
     // POST request
-    app.post("/api/friends", function(req, res) {
+    app.post("/api/friends", function (req, res) {
         // compatibility logic
         var bestMatch = {
             name: "",
@@ -34,14 +34,14 @@ module.exports = function(app) {
                 diff += Math.abs(parseInt(friendData[i].scores[j]) - parseInt(userScores[j]));
             }
             console.log(diff);
-            
+
             if (diff <= bestMatch.friendDiff) {
                 bestMatch.name = friendData[i].name;
                 bestMatch.photo = friendData[i].photo;
                 bestMatch.friendDiff = diff;
-                
+
             }
-            
+
         }
         friendData.push(userInfo);
         res.json(bestMatch);
